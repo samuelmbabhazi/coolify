@@ -75,7 +75,6 @@ class Deploy extends Tool
             pull_request_id: $pullRequestId,
             force_rebuild: $force,
             is_api: true,
-            no_questions_asked: true,
         );
 
         if (($result['status'] ?? null) === 'skipped' || ($result['status'] ?? null) === 'queue_full') {
